@@ -342,7 +342,7 @@ main .filtres-trie {
 
 /* ACCOUNT */
 
-.formulaire {
+.formulaire{
     width: 30%;
     box-sizing: border-box;
     border: 1px solid #010e20e8;
@@ -351,7 +351,7 @@ main .filtres-trie {
     padding: 5vh 2vw;
 }
 
-.formulaire input {
+.formulaire input, .form-avis select {
     display: block;
     width: 100%;
     font-size: 0.5em;
@@ -405,4 +405,57 @@ main .filtres-trie {
 .formulaire .mess {
     font-size: 0.6em;
     text-align: center;
+}
+
+/* POLITIQUE CONFI */
+
+.main-pol .upgrade {
+    text-align: center;
+    margin-bottom: 10vh;
+}
+
+.main-pol section {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20vh;
+}
+
+.main-pol h3 {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-top: 7vh;
+    border-top: 2px solid;
+    padding-top: 4vh;
+}
+
+.main-pol p {
+    font-size: 1rem;
+}
+
+.main-pol h4 {
+    margin-top: 10vh;
+    text-align: center;
+    border-top: 1px solid;
+    padding-top: 5vh;
+}
+
+/* Form Avis */
+
+main .form-avis {
+    width: 60%;
+}
+
+.form-avis select {
+    width: 100%;
+}
+
+.form-avis textarea {
+    width: 100%;
+    height: 20vh;
+    font-size: 1.1rem;
+}
+
+.form-avis select {
+    height: 5vh;
 }
