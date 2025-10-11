@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexora - Inscription</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 class="title"><a class="title" href="index.html">Nexora</a></h1>
+        <nav class="page-principale">
+            <a href="index.html">ACCEUIL</a>
+            <a href="produits.html">PRODUITS</a>
+            <a href="commandes.html">COMMANDES</a>
+        </nav>
+        <div class="recherche">
+            <input class="bar-recherche" type="text" placeholder="Recherche...">
+            <button type="button" class="butt-recherche">Recherche</button>
+        </div>
+        <nav class="page-secondaire">
+                <a href="account.html">Se Connecter</a> /
+                <a href="registre.html">S'Inscrire</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="formulaire form-account">
+            <form action="">
+                <h2 class="title title-form">S'inscrire</h2>
+                <label for="name">Nom Utilisateur :</label>
+                <input type="text" name="name" id="name" required >
+
+                <label for="email">Email :</label>
+                <input type="email" name="email" id="email" required>
+
+                <label for="password">Mot de Passe :</label>
+                <input type="password" pattern="[A-Za-z0-9.-]{6,}" required>
+
+                <label for="password">Confirmer Mot de Passe :</label>
+                <input type="password" pattern="[A-Za-z0-9.-]{6,}" required>
+
+                <button type="submit">S'inscrire</button>
+            </form>
+            <p class="mess">Vous avez deja un compte. <a href="account.html">se connecter</a></p>
+        </div>
+    </main>
+    
+</body>
+</html>

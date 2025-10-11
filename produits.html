@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexora - Produits</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 class="title"><a class="title" href="index.html">Nexora</a></h1>
+        <nav class="page-principale">
+            <a href="index.html">ACCEUIL</a>
+            <a href="produits.html">PRODUITS</a>
+            <a href="commandes.html">COMMANDES</a>
+        </nav>
+        <div class="recherche">
+            <input class="bar-recherche" type="text" placeholder="Recherche...">
+            <button type="button" class="butt-recherche">Recherche</button>
+        </div>
+        <nav class="page-secondaire">
+                <a href="account.html">Se Connecter</a> /
+                <a href="registre.html">S'Inscrire</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2 class="title title-prod">Nos Produits</h2>
+        <div class="filtres-prod">
+            <div class="filtres-trie">
+                <div class="filtres">
+                    <h3>FILTRES</h3>
+                    <label for="filtre-category">Categories : </label>
+                    <select name="filtre-category" id="filtre-category">
+                        <option value="">Tous les categories</option>
+                        <option value="1">Vectements</option>
+                        <option value="2">Electroniques</option>
+                        <option value="3">Accessoires</option>
+                    </select><br>
+
+                    <label for="price">Prix : </label>
+                    <input type="number" value="0" min="0">
+                </div>
+
+                <div class="trie">
+                    <h3>TRIE</h3>
+                    <label for="select-trie">Trié : </label>
+                    <select name="trie" id="select-trie">
+                        <option value="">Par default</option>
+                        <option value="1">De A-Z</option>
+                        <option value="2">De Z-A</option>
+                        <option value="3">Par Ordre Croissant des prix</option>
+                        <option value="4">Par Ordre Décroissant des prix</option>
+                    </select>
+                </div>
+
+                <button class="butt-filtres-trie">Filtré/Trie</button>
+            </div>
+
+            <div class="page-produits cart-produits">
+                <div class="produits">
+                    <img class="img-produit" src="https://www.cdiscount.com/other/image-pc-sms-393x261-p19-64728-3_210721104424.png?d6680027-16c1-4fbc-b384-9de5bf96580e" alt="costumes">
+                    <div class="detail-prod">
+                        <p class="nom-produits">T-REA</p>
+                        <p class="prix-produit">2000 FCFA</p>
+                    </div>
+                    <button class="commande">Commander</button>
+                </div>
+
+                <div class="produits">
+                    <img class="img-produit" src="https://www.cdiscount.com/other/image-pc-sms-393x261-p19-64728-3_210721104424.png?d6680027-16c1-4fbc-b384-9de5bf96580e" alt="costumes">
+                    <div class="detail-prod">
+                        <p class="nom-produits">T-REA</p>
+                        <p class="prix-produit">2000 FCFA</p>
+                    </div>
+                    <button class="commande">Commander</button>
+                </div>
+
+                <div class="produits">
+                    <img class="img-produit" src="https://www.cdiscount.com/other/image-pc-sms-393x261-p19-64728-3_210721104424.png?d6680027-16c1-4fbc-b384-9de5bf96580e" alt="costumes">
+                    <div class="detail-prod">
+                        <p class="nom-produits">T-REA</p>
+                        <p class="prix-produit">2000 FCFA</p>
+                    </div>
+                    <button class="commande">Commander</button>
+                </div>
+
+                <div class="produits">
+                    <img class="img-produit" src="https://www.cdiscount.com/other/image-pc-sms-393x261-p19-64728-3_210721104424.png?d6680027-16c1-4fbc-b384-9de5bf96580e" alt="costumes">
+                    <div class="detail-prod">
+                        <p class="nom-produits">T-REA</p>
+                        <p class="prix-produit">2000 FCFA</p>
+                    </div>
+                    <button class="commande">Commander</button>
+                </div>
+
+                <div class="produits">
+                    <img class="img-produit" src="https://www.cdiscount.com/other/image-pc-sms-393x261-p19-64728-3_210721104424.png?d6680027-16c1-4fbc-b384-9de5bf96580e" alt="costumes">
+                    <div class="detail-prod">
+                        <p class="nom-produits">T-REA</p>
+                        <p class="prix-produit">2000 FCFA</p>
+                    </div>
+                    <button class="commande">Commander</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="apc">
+            <a href="#">Des Avis</a> |
+            <a href="#">Politique de confidentialité</a> |
+            <a href="#">Conditions d'utilisation</a>
+        </div>
+        <p class="copyra">&copy; 2025 Nexora. Tous droits réservés.</p>
+    </footer>
+    
+</body>
+</html>
