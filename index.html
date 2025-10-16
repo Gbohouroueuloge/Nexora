@@ -4,30 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nexora</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
 </head>
 <body>
-    <header>
-        <h1 class="title"><a class="title" href="index.html">Nexora</a></h1>
-        <nav class="page-principale">
-            <a href="index.html">ACCEUIL</a>
-            <a href="Page/produits.html">PRODUITS</a>
-            <a href="Page/commandes.html">COMMANDES</a>
-        </nav>
+    <header class="header1">
         <div class="recherche">
             <input class="bar-recherche" type="text" placeholder="Recherche...">
-            <button type="submit" class="butt-recherche">Recherche</button>
         </div>
-        <nav class="page-secondaire">
-                <a href="Page/account.html">Se Connecter</a> /
-                <a href="Page/registre.html">S'Inscrire</a>
+    </header>
+    <header class="header2">
+        <h1 class="title"><a class="title" href="index.html">Nexora</a></h1>
+
+
+        <div class="recherche">
+            <input class="bar-recherche" type="text" placeholder="Recherche...">
+        </div>
+
+        <nav class="page-principale">
+            <div class="nav-div">
+                <a href="index.html">
+                    <img class="icone-nav" src="icons/ici-Accueil.svg" alt="Icône ACCUEIL">
+                    <p>Accueil</p>
+                </a>
+            </div>
+            <div class="nav-div">
+                <a href="Page/produits.html">
+                    <img class="icone-nav" src="icons/ic-Produits.svg" alt="Icône Produits">
+                <p>Produits</p>
+                </a>
+            </div>
+            <div class="nav-div">
+                <a href="Page/commandes.html">
+                    <img class="icone-nav" src="icons/ic-Commandes.svg" alt="Icône COMMANDES">
+                    <p>Commandes</p>
+                </a>
+            </div>
+
+            <div class="nav-div">
+                <a href="Page/account.html">
+                    <img class="icone-nav" src="icons/ic-connecter.svg" alt="Icône Connection">
+                    <p>Se Connecter</p>
+                </a>
+            </div>
+            <div class="nav-div">
+                <a href="Page/registre.html">
+                    <img class="icone-nav" src="icons/ic-Inscrire.svg" alt="Icône Inscription">
+                    <p>S'Inscrire</p>
+                </a>
+            </div>
         </nav>
     </header>
 
     <main>
         <div class="description">
             <p>Bienvenue sur Nexora, votre destination en ligne dédiée au produits de luxe.</p>
-            <p>Nous mettons à votre disposition une large sélection de produits de qualité supérieure, soigneusement choisis pour répondre à vos besoins quotidiens comme à vos envies les plus spécifiques.</p>
+            <p class="des1">Nous mettons à votre disposition une large sélection de produits de qualité supérieure</p>
+            <p class="hid des2" >Nous mettons à votre disposition une large sélection de produits de qualité supérieure, soigneusement choisis pour répondre à vos besoins quotidiens comme à vos envies les plus spécifiques.</p>
         </div>
 
         <h2 class="title titlte-quality">Pourquoi nous choisir ?</h2>
@@ -35,17 +67,17 @@
             <div class="qual qualite1">
                 <img class="icons-quality" src="icons/qualite-sup.svg" alt="qualité des produits" height="100px" width="100px">
                 <h3>Produits de qualité</h3>
-                <p class="text-quality">Produits de qualité supérieure et soigneusement sélectionnés pour la durer.</p>
+                <p class="hid text-quality">Produits de qualité supérieure et soigneusement sélectionnés pour la durer.</p>
             </div>
             <div class="qual qualite2">
                 <img class="icons-quality" src="icons/livraison.svg" alt="La rapidité des livraison">
                 <h3>Livraison express</h3>
-                <p class="text-quality">Commandes traitées rapidement et livrées en moins de 2 jours.</p>
+                <p class="hid text-quality">Commandes traitées rapidement et livrées en moins de 2 jours.</p>
             </div>
             <div class="qual qualite3">
                 <img class="icons-quality" src="icons/securite.svg" alt="La securité de vos données">
                 <h3>Paiement sécurisé</h3>
-                <p class="text-quality">Paiement 100% sécurisé et protection des données assurée.</p>
+                <p class="hid text-quality">Paiement 100% sécurisé et protection des données assurée.</p>
             </div>
         </div>
 
@@ -100,8 +132,8 @@
 
     <footer>
         <div class="apc">
-            <a href="Page/avis-client.html">Des Avis</a> |
-            <a href="Page/politique-confidentialite.html">Politique de confidentialité</a> |
+            <a href="Page/avis-client.html">Des Avis</a>
+            <a href="Page/politique-confidentialite.html">Politique de confidentialité</a>
             <a href="Page/conditions-utilisation.html">Conditions d'utilisation</a>
         </div>
         <p class="copyra">&copy; 2025 Nexora. Tous droits réservés.</p>
