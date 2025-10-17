@@ -540,7 +540,7 @@ main .title-prod {
 .formulaire input:focus {
     border: 3px solid #030d1be8;
     font-size: 5.3vw;
-    padding: 0.6vh 0.2vw;
+    padding: 2.1vh 0;
 }
 
 .formulaire label {
@@ -742,6 +742,30 @@ main .title-avis {
         font-size: 2.3vw;
     }
     .main-pol p {
+        font-size: 1.2vw;
+    }
+}
+
+@media screen and (min-width: 2800px) {
+    .qual .icons-quality {
+        height: 15vh;
+        width: 20vw;
+    }
+
+    .produits {
+        border: 5px solid black;
+        padding: 2em;
+    }
+
+    .img-produit {
+        width: 50vw;
+    }
+
+    button.commande {
+        font-size: 1.5vw;
+    }
+
+    footer {
         font-size: 1.2vw;
     }
 }
