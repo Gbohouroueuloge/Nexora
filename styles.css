@@ -36,6 +36,7 @@ body {
     background: #010222;
     border: 1px solid #021a3a5d;
     width: 100%;
+    z-index: 99;
 }
 
 .header1 {
@@ -96,9 +97,9 @@ header .bar-recherche:focus {
     cursor: pointer;
     transition:
         padding 0.3s,
+        font-style 0.1s,
         font-size 0.3s,
         font-weight 0.3s,
-        font-style 0.3s,
         color 0.3s;
 }
 
@@ -255,7 +256,13 @@ main .best {
     margin-bottom: 8vh;
     padding: 1.1em;
     background: rgb(1, 13, 31);
+    transition: transform 0.5s;
 }
+
+.produits:hover {
+    transform: scale(1.2);
+}
+
 
 .img-produit {
     max-width: 35vw;
@@ -391,7 +398,7 @@ footer {
 .apc a:hover {
     background: rgba(1, 13, 34, 0.767);
     border: 2px solid #021a3a5d;
-    padding: 0.4em;
+    transform: translateY(6px);
 }
 
 .copyra {
@@ -414,11 +421,7 @@ footer {
 
     .apc * {
         width: auto;
-    }
-
-    .apc *:not(.apc *:last-child)::after {
-        content: "/";
-        padding-left: 2vw;
+        margin-left: 2vw;
     }
 }
 
