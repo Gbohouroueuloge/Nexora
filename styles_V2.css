@@ -1,0 +1,61 @@
+.logo-principale {
+    width: 15vw !important;
+}
+
+.butt-voir-produits {transition: all 0.3s !important;}
+.butt-voir-produits:hover {
+    color: var(--bs-dark, red) !important;
+    background-color: rgb(139, 139, 139) !important;
+    font-weight: bold !important;
+}
+
+.produit {
+    transition: all 0.6s !important;
+}
+.produit:hover {
+    transform: scale(1.2) !important;
+}
+
+.politiques a {
+    transition: all 0.3s !important;
+}
+
+.politiques a:hover {
+    transform: skew(10deg) !important;
+    transform: translatey(6px) !important;
+    border: 2px solid rgb(139, 139, 139) !important;
+}
+
+.formulaire {
+    margin: 6vw auto 15vw auto !important;
+}
+
+.formulaire .form-control:focus {
+    outline: 4px solid var(--bs-primary);
+}
+
+.main-politique h3 {
+    text-align: center;
+    margin-top: 4vw;
+    border-top: 1px solid;
+    padding-top: 4vw;
+    width: 80vw;
+    margin: auto;
+    padding-bottom: 2vw;
+    margin-top: 4vw;
+}
+
+.main-politique :is(p, ul) {
+    width: 60vw;
+    margin: auto;
+}
+
+@media screen and (max-width: 1023px) {
+    .logo-principale {
+        width: 45vw !important;
+    }
+
+    .formulaire {
+        width: 100vw !important;
+    }
+}

@@ -1,0 +1,22 @@
+<!-- Nexora — Orbite futuriste -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 80" width="300" height="80" role="img" aria-label="Nexora orbite">
+    <defs>
+        <linearGradient id="g3" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0%" stop-color="#06b6d4"/>
+        <stop offset="50%" stop-color="#0ea5e9"/>
+        <stop offset="100%" stop-color="#7c3aed"/>
+        </linearGradient>
+    </defs>
+
+    <!-- Orbits -->
+    <g transform="translate(18,12)">
+        <ellipse cx="36" cy="26" rx="28" ry="16" fill="none" stroke="url(#g3)" stroke-width="3" transform="rotate(-18 36 26)"/>
+        <ellipse cx="36" cy="26" rx="20" ry="12" fill="url(#g3)" opacity="0.12"/>
+        <circle cx="36" cy="26" r="8" fill="#0f172a"/>
+    </g>
+
+    <!-- Wordmark -->
+    <text x="110" y="46" font-family="Poppins, Arial, sans-serif" font-size="30" font-weight="600" fill="#0f172a">
+        Nexora
+    </text>
+    </svg>

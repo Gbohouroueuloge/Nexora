@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr"  data-bs-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nexora v.2 - Produits</title>
+    <title>Nexora v.2</title>
 
-    <link rel="shortcut icon" href="../icons/ic_home_nexora.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="icons/ic_home_nexora.svg" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../styles_V2.css">
+
+    <link rel="stylesheet" href="styles_V2.css">
 </head>
 <body class="bg-dark text-light">
 
@@ -17,8 +18,8 @@
             class="navbar navbar-expand-sm navbar-light bg-dark-subtle"
         >
             <div class="container fs-6 fw-bold">
-                <a class="navbar-brand" href="../index-V2.html">
-                    <img src="../icons/ic_home_nexora.svg" alt="Icone Principale" class="img-fluid logo-principale">
+                <a class="navbar-brand" href="index-boots.html">
+                    <img src="icons/ic_home_nexora.svg" alt="Icone Principale" class="img-fluid logo-principale">
                 </a>
                 <button
                     class="navbar-toggler d-lg-none"
@@ -34,18 +35,18 @@
                 <div class="collapse navbar-collapse" id="collapsibleNavId">
                     <ul class="navbar-nav me-auto mt-2 mt-lg-0">
                         <li class="nav-item ms-3">
-                            <a class="nav-link icon-link icon-link-hover" href="../index-V2.html">
-                                <img src="../icons/ici-Accueil.svg" alt="icons" class="bi">Accueil
+                            <a class="nav-link icon-link icon-link-hover active" href="index-boots.html">
+                                <img src="icons/ici-Accueil.svg" alt="icons" class="bi">Accueil
                                 <span class="visually-hidden">(current)</span></a
                             >
                         </li>
                         <li class="nav-item ms-3">
-                            <a class="nav-link icon-link icon-link-hover active" href="produits.html">
-                                <img src="../icons/ic-Produits.svg" alt="icons" class="bi">Produits</a>
+                            <a class="nav-link icon-link icon-link-hover " href="Page/produits.html">
+                                <img src="icons/ic-Produits.svg" alt="icons" class="bi">Produits</a>
                         </li>
                         <li class="nav-item ms-3">
-                            <a class="nav-link icon-link icon-link-hover" href="commandes.html">
-                                <img src="../icons/ic-Commandes.svg" alt="icons" class="bi">
+                            <a class="nav-link icon-link icon-link-hover" href="Page/commandes.html">
+                                <img src="icons/ic-Commandes.svg" alt="icons" class="bi">
                                 commandes</a>
                         </li>
                         <li class="nav-item dropdown ms-3">
@@ -62,10 +63,10 @@
                                 class="dropdown-menu bg-dark-subtle"
                                 aria-labelledby="dropdownId"
                             >
-                                <a class="dropdown-item icon-link icon-link-hover fw-bold" href="account.html">
-                                <img src="../icons/ic-connecter.svg" alt="icons" class="bi">Se Connecter</a>
-                                <a class="dropdown-item icon-link icon-link-hover fw-bold" href="registre.html">
-                                <img src="../icons/ic-Inscrire.svg" alt="icons" class="bi">S'Inscrire</a>
+                                <a class="dropdown-item icon-link icon-link-hover fw-bold" href="Page/account.html">
+                                <img src="icons/ic-connecter.svg" alt="icons" class="bi">Se Connecter</a>
+                                <a class="dropdown-item icon-link icon-link-hover fw-bold" href="Page/registre.html">
+                                <img src="icons/ic-Inscrire.svg" alt="icons" class="bi">S'Inscrire</a>
                             </div>
                         </li>
                     </ul>
@@ -84,47 +85,39 @@
         </nav>
     
     </header>
-
+    
     <main>
-        <h2 class="text-center my-5 fs-1 fw-bold">Nos Produits</h2>
+        <div class="container-lg bg-black w-75 border mt-5 p-3 text-center fw-medium fs-5 rounded rounded-4">
+            <p class=" p-0 m-0 mb-2">Bienvenue chez Nexora, pour nous chaque produit est soigneusement sélectionné pour vous offrir qualité, authenticité et sérénité. Nous croyons qu’un achat en ligne doit être aussi sûr que plaisant</p>
+            <p class="d-none d-lg-block p-0 m-0 mb-4" >C’est pourquoi nous garantissons transparence, sécurité et satisfaction à chaque commande.</p>
+            <p><a href="Page/produits.html" class="btn text-decoration-none p-0 p-lg-2 w-50 bg-primary-subtle butt-voir-produits">Voir nos produits</a></p>
+        </div>
 
-        <div class="fw-medium row m-auto ">
-
-            <div class="d-none d-lg-block border h-50 bg-black border-3 col-3 ">
-                <h3 class="text-center mb-4">FILTRES</h3>
-                <div class="input-group mb-4">
-                    <label for="filtre-category" class="input-group-text bg-black text-light fw-bold rounded">Categories  : </label>
-                    <select name="filtre-category" id="filtre-category" class="form-select ms-2 rounded">
-                        <option value="">Tous les categories</option>
-                        <option value="1">Vectements</option>
-                        <option value="2">Electroniques</option>
-                        <option value="3">Accessoires</option>
-                    </select>
+        <div class="container-xl mb-4">
+            <h2 class="text-center mt-5 mb-4">Pourquoi nous choisir ?</h2>
+            <div class="d-flex gap-3 gap-lg-5 justify-content-between justify-content-lg-evenly text-center">
+                <div class="d-flex bg-black flex-column border gap-3 pt-3">
+                    <img class="img-fluid w-50 align-self-center" src="icons/qualite-sup.svg" alt="qualité des produits">
+                    <h3 class="fs-5">Produits de qualité</h3>
+                    <p class="d-none d-lg-block">Produits de qualité supérieure et soigneusement sélectionnés pour la durer.</p>
                 </div>
-                <div class="input-group mb-4">
-                    <label for="price-produit" class="input-group-text rounded fw-bold bg-black text-light">Prix : </label>
-                    <input type="range" id="price-produit" class="form-range d-inline-block w-50 my-auto mx-2" value="0" min="0" max="2000">
-                    <output for="range4" id="rangeValue" aria-hidden="true" class="input-group-text rounded fw-bold"></output>
+                <div class="d-flex bg-black flex-column border gap-3 pt-3">
+                    <img class="img-fluid w-50 align-self-center" src="icons/livraison.svg" alt="La rapidité des livraison">
+                    <h3 class="fs-5">Livraison express</h3>
+                    <p class="d-none d-lg-block">Commandes traitées rapidement et livrées en moins de 2 jours.</p>
                 </div>
-
-                <h3 class="text-center mb-4">TRIE</h3>
-                <div class="input-group mb-4">
-                    <label for="select-trie" class="input-group-text bg-black text-light fw-bold rounded">Trié : </label>
-                    <select name="trie" id="select-trie" class="form-select ms-2 rounded">
-                        <option value="">Par default</option>
-                        <option value="1">De A-Z</option>
-                        <option value="2">De Z-A</option>
-                        <option value="3">Par Ordre Croissant des prix</option>
-                        <option value="4">Par Ordre Décroissant des prix</option>
-                    </select>
+                <div class="d-flex bg-black flex-column border gap-3 pt-3">
+                    <img class="img-fluid w-50 align-self-center" src="icons/securite.svg" alt="La securité de vos données">
+                    <h3 class="fs-5">Paiement sécurisé</h3>
+                    <p class="d-none d-lg-block">Paiement 100% sécurisé et protection des données assurée.</p>
                 </div>
-
-                <button class="d-block btn btn-lg btn-light m-auto my-5">Filtré / Trie</button>
             </div>
+        </div>
 
-            <div class="col"></div>
+        <div class="container-xl mt-5">
+            <h2 class="text-center mb-5">Nos Meuilleurs Produits</h2>
 
-            <div class="col-12 col-lg-8 d-flex bg-black flex-wrap row-gap-5 column-gap-1 flex-row justify-content-evenly border border-5 border-dark-subtle py-5">
+            <div class="d-flex bg-black flex-wrap row-gap-5 column-gap-1 flex-row justify-content-evenly border border-5 border-dark-subtle py-5">
                 <div class="produit card col-lg-3 col-5 p-3">
                     <img class="card-img img-fluid" src="https://www.cdiscount.com/other/image-pc-sms-393x261-p19-64728-3_210721104424.png?d6680027-16c1-4fbc-b384-9de5bf96580e" alt="costumes">
                     <div class="d-flex flex-lg-row flex-column justify-content-start justify-content-lg-around fw-bold">
@@ -145,7 +138,7 @@
                 
                 <div class="produit card col-lg-3 col-5 p-3">
                     <img class="card-img img-fluid" src="https://www.cdiscount.com/other/image-pc-sms-393x261-p19-64728-3_210721104424.png?d6680027-16c1-4fbc-b384-9de5bf96580e" alt="costumes">
-                    <div class="d-flex flex-lg-row flex-column justify-content-start justify-content-lg-around fw-bold">
+                    <div class="hstack justify-content-between justify-content-lg-around fw-bold">
                         <p>T-REA</p>
                         <p>2000 FCFA</p>
                     </div>
@@ -166,42 +159,29 @@
 
     <footer class="bg-dark-subtle mt-5 fs-2 w-100 h100">
         <div class="politiques d-flex flex-column flex-lg-row justify-content-center align-items-center gap-5   ">
-            <a href="avis-client.html" class="link-dark text-decoration-none">Des Avis</a>
-            <a href="politique-confidentialite.html" class="link-dark text-decoration-none">Confidentialité</a>
-            <a href="conditions-utilisation.html" class="link-dark text-decoration-none">Conditions d'utilisation</a>
+            <a href="Page/avis-client.html" class="link-dark text-decoration-none">Des Avis</a>
+            <a href="Page/politique-confidentialite.html" class="link-dark text-decoration-none">Confidentialité</a>
+            <a href="Page/conditions-utilisation.html" class="link-dark text-decoration-none">Conditions d'utilisation</a>
         </div>
         <hr class="border border-3 border-dark my-5">
 
         <div class="d-flex justify-content-center gap-5 w-50 flex-wrap m-auto align-items-center mt-5">
             <a href="#" class="icon-link icon-link-hover text-decoration-none text-dark">
-                <img src="../icons/facebook.svg" alt="Icone facebook" class="bi">Facebook
+                <img src="icons/facebook.svg" alt="Icone facebook" class="bi">Facebook
             </a>
             <a href="#" class="icon-link icon-link-hover text-decoration-none text-dark">
-                <img src="../icons/tiktok.svg" alt="Icone tiktok" class="bi">TikTok
+                <img src="icons/tiktok.svg" alt="Icone tiktok" class="bi">TikTok
             </a>
             <a href="#" class="icon-link icon-link-hover text-decoration-none text-dark">
-                <img src="../icons/instagram.svg" alt="Icone instagram" class="bi">Instagram
+                <img src="icons/instagram.svg" alt="Icone instagram" class="bi">Instagram
             </a>
             <a href="#" class="icon-link icon-link-hover text-decoration-none text-dark">
-                <img src="../icons/whatsapp.svg" alt="Icone whatsapp" class="bi">WhatsApp
+                <img src="icons/whatsapp.svg" alt="Icone whatsapp" class="bi">WhatsApp
             </a>
         </div>
         <hr class="border border-3 border-dark my-5">
 
         <p class="mt-5 position-relative top-50 text-dark text-center">&copy 2025 Nexora. Tous droits réservés.</p>
     </footer>
-
-    <script>
-        // This is an example script, please modify as needed
-        const rangeInput = document.getElementById('price-produit');
-        const rangeOutput = document.getElementById('rangeValue');
-
-        // Set initial value
-        rangeOutput.textContent = rangeInput.value;
-
-        rangeInput.addEventListener('input', function() {
-            rangeOutput.textContent = this.value;
-        });
-    </script>
 </body>
 </html>

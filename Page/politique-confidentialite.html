@@ -3,66 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nexora - politique-confidentialite</title>
-    <link rel="stylesheet" href="../styles.css">
+    <title>Nexora v.2 - Confidentialité</title>
+
+    <link rel="shortcut icon" href="../icons/ic_home_nexora.svg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="../styles_V2.css">
 </head>
-<body>
-    <header class="header1">
-        <h1 class="title"><a class="title" href="../index.html">Nexora</a></h1>
+<body class="bg-dark text-light">
 
-        <div class="recherche">
-            <input class="bar-recherche" type="text" placeholder="Recherche...">
-        </div>
-    </header>
-
-    <header class="header2">
-        <h1 class="title">
-            <a class="title" href="../index.html">Nexora</a>
-        </h1>
-
-
-        <div class="recherche">
-            <input class="bar-recherche" type="text" placeholder="Recherche...">
-        </div>
-
-        <nav class="page-principale">
-            <div class="nav-div">
-                <a href="../index.html">
-                    <img class="icone-nav" src="../icons/ici-Accueil.svg" alt="Icône ACCUEIL">
-                    <p>Accueil</p>
+    <header class="sticky-top">
+        <nav
+            class="navbar navbar-expand-sm navbar-light bg-dark-subtle"
+        >
+            <div class="container fs-6 fw-bold">
+                <a class="navbar-brand" href="../index-V2.html">
+                    <img src="../icons/ic_home_nexora.svg" alt="Icone Principale" class="img-fluid logo-principale">
                 </a>
-            </div>
-            <div class="nav-div">
-                <a href="produits.html">
-                    <img class="icone-nav" src="../icons/ic-Produits.svg" alt="Icône Produits">
-                <p>Produits</p>
-                </a>
-            </div>
-            <div class="nav-div">
-                <a href="commandes.html">
-                    <img class="icone-nav" src="../icons/ic-Commandes.svg" alt="Icône COMMANDES">
-                    <p>Commandes</p>
-                </a>
-            </div>
-
-            <div class="nav-div">
-                <a href="account.html">
-                    <img class="icone-nav" src="../icons/ic-connecter.svg" alt="Icône Connection">
-                    <p>Se Connecter</p>
-                </a>
-            </div>
-            <div class="nav-div">
-                <a href="registre.html">
-                    <img class="icone-nav" src="../icons/ic-Inscrire.svg" alt="Icône Inscription">
-                    <p>S'Inscrire</p>
-                </a>
+                <button
+                    class="navbar-toggler d-lg-none"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavId"
+                    aria-controls="collapsibleNavId"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                        <li class="nav-item ms-3">
+                            <a class="nav-link icon-link icon-link-hover" href="../index-V2.html">
+                                <img src="../icons/ici-Accueil.svg" alt="icons" class="bi">Accueil
+                                <span class="visually-hidden">(current)</span></a
+                            >
+                        </li>
+                        <li class="nav-item ms-3">
+                            <a class="nav-link icon-link icon-link-hover" href="produits.html">
+                                <img src="../icons/ic-Produits.svg" alt="icons" class="bi">Produits</a>
+                        </li>
+                        <li class="nav-item ms-3">
+                            <a class="nav-link icon-link icon-link-hover" href="commandes.html">
+                                <img src="../icons/ic-Commandes.svg" alt="icons" class="bi">
+                                commandes</a>
+                        </li>
+                        <li class="nav-item dropdown ms-3">
+                            <a
+                                class="nav-link dropdown-toggle"
+                                href="#"
+                                id="dropdownId"
+                                data-bs-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                                >Connecter / Inscription</a
+                            >
+                            <div
+                                class="dropdown-menu bg-dark-subtle"
+                                aria-labelledby="dropdownId"
+                            >
+                                <a class="dropdown-item icon-link icon-link-hover fw-bold" href="account.html">
+                                <img src="../icons/ic-connecter.svg" alt="icons" class="bi">Se Connecter</a>
+                                <a class="dropdown-item icon-link icon-link-hover fw-bold" href="registre.html">
+                                <img src="../icons/ic-Inscrire.svg" alt="icons" class="bi">S'Inscrire</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <form class=" my-2 my-lg-0">
+                        <div class="input-group">
+                            <input
+                                class="form-control me-sm-2"
+                                type="text"
+                                placeholder="Recherche..."
+                            />
+                            <button class="btn btn-dark btn-outline-secondary">🔍</button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </nav>
+    
     </header>
 
-    <main class="main-pol">
-        <h2 class="title politique-title" >Politique Confidentialité</h2>
-        <p class="upgrade">Dernière mise à jour : 10 octobre 2025</p>
+    <main class="main-politique">
+        <h2 class="text-center fw-bold mt-5" >Politique Confidentialité</h2>
+        <p class="text-center mb-4">Dernière mise à jour : 10 octobre 2025</p>
         <section>
             <h3>1. Introduction</h3>
             <p>Nous accordons une grande importance à la protection de votre vie privée. Cette politique explique comment vos données personnelles sont collectées, utilisées et protégées lorsque vous utilisez notre site.</p>
@@ -100,17 +126,35 @@
             <h3>8. Modifications de la politique</h3>
             <p>Nous nous réservons le droit de modifier cette politique. Les changements seront publiés sur cette page avec la date de mise à jour.</p>
 
-            <h4>Pour plus d'infos Contactez-nous à <a href="mailto:Nexora@monsite.com">Nexora@bestsite.com</a>.</h4>
+            <h4 class="fs-6 mt-5 text-center">Pour plus d'infos Contactez-nous à <a href="mailto:Nexora@monsite.com">Nexora@bestsite.com</a>.</h4>
         </section>
     </main>
     
-    <footer>
-        <div class="apc">
-            <a href="avis-client.html">Des Avis</a> 
-            <a href="politique-confidentialite.html">Politique de confidentialité</a> 
-            <a href="conditions-utilisation.html">Conditions d'utilisation</a>
+    <footer class="bg-dark-subtle mt-5 fs-2 w-100 h100">
+        <div class="politiques d-flex flex-column flex-lg-row justify-content-center align-items-center gap-5   ">
+            <a href="avis-client.html" class="link-dark text-decoration-none active">Des Avis</a>
+            <a href="politique-confidentialite.html" class="link-dark text-decoration-none">Confidentialité</a>
+            <a href="conditions-utilisation.html" class="link-dark text-decoration-none">Conditions d'utilisation</a>
         </div>
-        <p class="copyra">&copy; 2025 Nexora. Tous droits réservés.</p>
+        <hr class="border border-3 border-dark my-5">
+
+        <div class="d-flex justify-content-center gap-5 w-50 flex-wrap m-auto align-items-center mt-5">
+            <a href="#" class="icon-link icon-link-hover text-decoration-none text-dark">
+                <img src="../icons/facebook.svg" alt="Icone facebook" class="bi">Facebook
+            </a>
+            <a href="#" class="icon-link icon-link-hover text-decoration-none text-dark">
+                <img src="../icons/tiktok.svg" alt="Icone tiktok" class="bi">TikTok
+            </a>
+            <a href="#" class="icon-link icon-link-hover text-decoration-none text-dark">
+                <img src="../icons/instagram.svg" alt="Icone instagram" class="bi">Instagram
+            </a>
+            <a href="#" class="icon-link icon-link-hover text-decoration-none text-dark">
+                <img src="../icons/whatsapp.svg" alt="Icone whatsapp" class="bi">WhatsApp
+            </a>
+        </div>
+        <hr class="border border-3 border-dark my-5">
+
+        <p class="mt-5 position-relative top-50 text-dark text-center">&copy 2025 Nexora. Tous droits réservés.</p>
     </footer>
 </body>
 </html>
