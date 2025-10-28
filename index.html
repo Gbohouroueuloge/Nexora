@@ -1,148 +1,187 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr"  data-bs-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nexora</title>
+    <title>Nexora v.2</title>
+
+    <link rel="shortcut icon" href="icons/ic_home_nexora.svg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <header class="header1">
-        <h1 class="title"><a class="title" href="index.html">Nexora</a></h1>
+<body class="bg-dark text-light">
 
-        <div class="recherche">
-            <input class="bar-recherche" type="text" placeholder="Recherche...">
-        </div>
-    </header>
-
-    <header class="header2">
-        <h1 class="title">
-            <a class="title" href="index.html">Nexora</a>
-        </h1>
-
-        <div class="recherche">
-            <input class="bar-recherche" type="text" placeholder="Recherche...">
-        </div>
-
-        <nav class="page-principale">
-            <div class="nav-div">
-                <a href="index.html">
-                    <img class="icone-nav" src="icons/ici-Accueil.svg" alt="Icône ACCUEIL">
-                    <p>Accueil</p>
+    <header class="sticky-top">
+        <nav
+            class="navbar navbar-expand-sm navbar-light bg-dark-subtle"
+        >
+            <div class="container fs-6 fw-bold">
+                <a class="navbar-brand" href="index.html">
+                    <img src="icons/ic_home_nexora.svg" alt="Icone Principale" class="img-fluid logo-principale">
                 </a>
-            </div>
-            <div class="nav-div">
-                <a href="Page/produits.html">
-                    <img class="icone-nav" src="icons/ic-Produits.svg" alt="Icône Produits">
-                <p>Produits</p>
-                </a>
-            </div>
-            <div class="nav-div">
-                <a href="Page/commandes.html">
-                    <img class="icone-nav" src="icons/ic-Commandes.svg" alt="Icône COMMANDES">
-                    <p>Commandes</p>
-                </a>
-            </div>
-
-            <div class="nav-div">
-                <a href="Page/account.html">
-                    <img class="icone-nav" src="icons/ic-connecter.svg" alt="Icône Connection">
-                    <p>Se Connecter</p>
-                </a>
-            </div>
-            <div class="nav-div">
-                <a href="Page/registre.html">
-                    <img class="icone-nav" src="icons/ic-Inscrire.svg" alt="Icône Inscription">
-                    <p>S'Inscrire</p>
-                </a>
+                <button
+                    class="navbar-toggler d-lg-none"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavId"
+                    aria-controls="collapsibleNavId"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                        <li class="nav-item ms-3">
+                            <a class="nav-link icon-link icon-link-hover active" href="index.html">
+                                <img src="icons/ici-Accueil.svg" alt="icons" class="bi">Accueil
+                                <span class="visually-hidden">(current)</span></a
+                            >
+                        </li>
+                        <li class="nav-item ms-3">
+                            <a class="nav-link icon-link icon-link-hover " href="Page/produits.html">
+                                <img src="icons/ic-Produits.svg" alt="icons" class="bi">Produits</a>
+                        </li>
+                        <li class="nav-item ms-3">
+                            <a class="nav-link icon-link icon-link-hover" href="Page/commandes.html">
+                                <img src="icons/ic-Commandes.svg" alt="icons" class="bi">
+                                commandes</a>
+                        </li>
+                        <li class="nav-item dropdown ms-3">
+                            <a
+                                class="nav-link dropdown-toggle"
+                                href="#"
+                                id="dropdownId"
+                                data-bs-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                                >Connecter / Inscription</a
+                            >
+                            <div
+                                class="dropdown-menu bg-dark-subtle"
+                                aria-labelledby="dropdownId"
+                            >
+                                <a class="dropdown-item icon-link icon-link-hover fw-bold" href="Page/account.html">
+                                <img src="icons/ic-connecter.svg" alt="icons" class="bi">Se Connecter</a>
+                                <a class="dropdown-item icon-link icon-link-hover fw-bold" href="Page/registre.html">
+                                <img src="icons/ic-Inscrire.svg" alt="icons" class="bi">S'Inscrire</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <form class=" my-2 my-lg-0">
+                        <div class="input-group">
+                            <input
+                                class="form-control me-sm-2"
+                                type="text"
+                                placeholder="Recherche..."
+                            />
+                            <button class="btn btn-dark btn-outline-secondary">🔍</button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </nav>
+    
     </header>
-
+    
     <main>
-        <div class="description">
-            <p>Bienvenue sur Nexora, votre destination en ligne dédiée au produits de luxe.</p>
-            <p class="des1">Nous mettons à votre disposition une large sélection de produits de qualité supérieure</p>
-            <p class="hid des2" >Nous mettons à votre disposition une large sélection de produits de qualité supérieure, soigneusement choisis pour répondre à vos besoins quotidiens comme à vos envies les plus spécifiques.</p>
+        <div class="container-lg bg-black w-75 border mt-5 p-3 text-center fw-medium fs-5 rounded rounded-4">
+            <p class=" p-0 m-0 mb-2">Bienvenue chez Nexora, pour nous chaque produit est soigneusement sélectionné pour vous offrir qualité, authenticité et sérénité. Nous croyons qu’un achat en ligne doit être aussi sûr que plaisant</p>
+            <p class="d-none d-lg-block p-0 m-0 mb-4" >C’est pourquoi nous garantissons transparence, sécurité et satisfaction à chaque commande.</p>
+            <p><a href="Page/produits.html" class="btn text-decoration-none p-0 p-lg-2 w-50 bg-primary-subtle butt-voir-produits">Voir nos produits</a></p>
         </div>
 
-        <h2 class="title titlte-quality">Pourquoi nous choisir ?</h2>
-        <div class="quality">
-            <div class="qual qualite1">
-                <img class="icons-quality" src="icons/qualite-sup.svg" alt="qualité des produits" height="100px" width="100px">
-                <h3>Produits de qualité</h3>
-                <p class="hid text-quality">Produits de qualité supérieure et soigneusement sélectionnés pour la durer.</p>
-            </div>
-            <div class="qual qualite2">
-                <img class="icons-quality" src="icons/livraison.svg" alt="La rapidité des livraison">
-                <h3>Livraison express</h3>
-                <p class="hid text-quality">Commandes traitées rapidement et livrées en moins de 2 jours.</p>
-            </div>
-            <div class="qual qualite3">
-                <img class="icons-quality" src="icons/securite.svg" alt="La securité de vos données">
-                <h3>Paiement sécurisé</h3>
-                <p class="hid text-quality">Paiement 100% sécurisé et protection des données assurée.</p>
+        <div class="container-xl mb-4">
+            <h2 class="text-center mt-5 mb-4">Pourquoi nous choisir ?</h2>
+            <div class="d-flex gap-3 gap-lg-5 justify-content-between justify-content-lg-evenly text-center">
+                <div class="d-flex bg-black flex-column border gap-3 pt-3">
+                    <img class="img-fluid w-50 align-self-center" src="icons/qualite-sup.svg" alt="qualité des produits">
+                    <h3 class="fs-5">Produits de qualité</h3>
+                    <p class="d-none d-lg-block">Produits de qualité supérieure et soigneusement sélectionnés pour la durer.</p>
+                </div>
+                <div class="d-flex bg-black flex-column border gap-3 pt-3">
+                    <img class="img-fluid w-50 align-self-center" src="icons/livraison.svg" alt="La rapidité des livraison">
+                    <h3 class="fs-5">Livraison express</h3>
+                    <p class="d-none d-lg-block">Commandes traitées rapidement et livrées en moins de 2 jours.</p>
+                </div>
+                <div class="d-flex bg-black flex-column border gap-3 pt-3">
+                    <img class="img-fluid w-50 align-self-center" src="icons/securite.svg" alt="La securité de vos données">
+                    <h3 class="fs-5">Paiement sécurisé</h3>
+                    <p class="d-none d-lg-block">Paiement 100% sécurisé et protection des données assurée.</p>
+                </div>
             </div>
         </div>
 
-        <h2 class="title title-best-prod">Les Meuilleurs Produits</h2>
-        <div class="best cart-produits">
-            <div class="produits">
-                <img class="img-produit" src="https://www.cdiscount.com/other/image-pc-sms-393x261-p19-64728-3_210721104424.png?d6680027-16c1-4fbc-b384-9de5bf96580e" alt="costumes">
-                <div class="detail-prod">
-                    <p class="nom-produits">T-REA</p>
-                    <p class="prix-produit">2000 FCFA</p>
-                </div>
-                <button class="commande">Commander</button>
-            </div>
+        <div class="container-xl mt-5">
+            <h2 class="text-center mb-5">Nos Meuilleurs Produits</h2>
 
-            <div class="produits">
-                <img class="img-produit" src="https://www.cdiscount.com/other/image-pc-sms-393x261-p19-64728-3_210721104424.png?d6680027-16c1-4fbc-b384-9de5bf96580e" alt="costumes">
-                <div class="detail-prod">
-                    <p class="nom-produits">T-REA</p>
-                    <p class="prix-produit">2000 FCFA</p>
+            <div class="d-flex bg-black flex-wrap row-gap-5 column-gap-1 flex-row justify-content-evenly border border-5 border-dark-subtle py-5">
+                <div class="produit card col-lg-3 col-5 p-3">
+                    <img class="card-img img-fluid" src="https://www.cdiscount.com/other/image-pc-sms-393x261-p19-64728-3_210721104424.png?d6680027-16c1-4fbc-b384-9de5bf96580e" alt="costumes">
+                    <div class="d-flex flex-lg-row flex-column justify-content-start justify-content-lg-around fw-bold">
+                        <p>T-REA</p>
+                        <p>2000 FCFA</p>
+                    </div>
+                    <button class="btn btn-dark w-75 m-auto p-0 p-lg-2">Commander</button>
                 </div>
-                <button class="commande">Commander</button>
-            </div>
 
-            <div class="produits">
-                <img class="img-produit" src="https://www.cdiscount.com/other/image-pc-sms-393x261-p19-64728-3_210721104424.png?d6680027-16c1-4fbc-b384-9de5bf96580e" alt="costumes">
-                <div class="detail-prod">
-                    <p class="nom-produits">T-REA</p>
-                    <p class="prix-produit">2000 FCFA</p>
+                <div class="produit card col-lg-3 col-5 p-3">
+                    <img class="card-img img-fluid" src="https://www.cdiscount.com/other/image-pc-sms-393x261-p19-64728-3_210721104424.png?d6680027-16c1-4fbc-b384-9de5bf96580e" alt="costumes">
+                    <div class="d-flex flex-lg-row flex-column justify-content-start justify-content-lg-around fw-bold">
+                        <p>T-REA</p>
+                        <p>2000 FCFA</p>
+                    </div>
+                    <button class="btn btn-dark w-75 m-auto p-0 p-lg-2">Commander</button>
                 </div>
-                <button class="commande">Commander</button>
-            </div>
+                
+                <div class="produit card col-lg-3 col-5 p-3">
+                    <img class="card-img img-fluid" src="https://www.cdiscount.com/other/image-pc-sms-393x261-p19-64728-3_210721104424.png?d6680027-16c1-4fbc-b384-9de5bf96580e" alt="costumes">
+                    <div class="hstack justify-content-between justify-content-lg-around fw-bold">
+                        <p>T-REA</p>
+                        <p>2000 FCFA</p>
+                    </div>
+                    <button class="btn btn-dark w-75 m-auto p-0 p-lg-2">Commander</button>
+                </div>
 
-            <div class="produits">
-                <img class="img-produit" src="https://www.cdiscount.com/other/image-pc-sms-393x261-p19-64728-3_210721104424.png?d6680027-16c1-4fbc-b384-9de5bf96580e" alt="costumes">
-                <div class="detail-prod">
-                    <p class="nom-produits">T-REA</p>
-                    <p class="prix-produit">2000 FCFA</p>
+                <div class="produit card col-lg-3 col-5 p-3">
+                    <img class="card-img img-fluid" src="https://www.cdiscount.com/other/image-pc-sms-393x261-p19-64728-3_210721104424.png?d6680027-16c1-4fbc-b384-9de5bf96580e" alt="costumes">
+                    <div class="d-flex flex-lg-row flex-column justify-content-start justify-content-lg-around fw-bold">
+                        <p>T-REA</p>
+                        <p>2000 FCFA</p>
+                    </div>
+                    <button class="btn btn-dark w-75 m-auto p-0 p-lg-2">Commander</button>
                 </div>
-                <button class="commande">Commander</button>
-            </div>
-
-            <div class="produits">
-                <img class="img-produit" src="https://www.cdiscount.com/other/image-pc-sms-393x261-p19-64728-3_210721104424.png?d6680027-16c1-4fbc-b384-9de5bf96580e" alt="costumes">
-                <div class="detail-prod">
-                    <p class="nom-produits">T-REA</p>
-                    <p class="prix-produit">2000 FCFA</p>
-                </div>
-                <button class="commande">Commander</button>
             </div>
         </div>
     </main>
 
-    <footer>
-        <div class="apc">
-            <a href="Page/avis-client.html">Des Avis</a>
-            <p>/</p>
-            <a href="Page/politique-confidentialite.html">Politique de confidentialité</a>
-            <p>/</p>
-            <a href="Page/conditions-utilisation.html">Conditions d'utilisation</a>
+    <footer class="bg-dark-subtle mt-5 fs-2 w-100 h100">
+        <div class="politiques d-flex flex-column flex-lg-row justify-content-center align-items-center gap-5   ">
+            <a href="Page/avis-client.html" class="link-dark text-decoration-none">Des Avis</a>
+            <a href="Page/politique-confidentialite.html" class="link-dark text-decoration-none">Confidentialité</a>
+            <a href="Page/conditions-utilisation.html" class="link-dark text-decoration-none">Conditions d'utilisation</a>
         </div>
-        <p class="copyra">&copy; 2025 Nexora. Tous droits réservés.</p>
+        <hr class="border border-3 border-dark my-5">
+
+        <div class="d-flex justify-content-center gap-5 w-50 flex-wrap m-auto align-items-center mt-5">
+            <a href="#" class="icon-link icon-link-hover text-decoration-none text-dark">
+                <img src="icons/facebook.svg" alt="Icone facebook" class="bi">Facebook
+            </a>
+            <a href="#" class="icon-link icon-link-hover text-decoration-none text-dark">
+                <img src="icons/tiktok.svg" alt="Icone tiktok" class="bi">TikTok
+            </a>
+            <a href="#" class="icon-link icon-link-hover text-decoration-none text-dark">
+                <img src="icons/instagram.svg" alt="Icone instagram" class="bi">Instagram
+            </a>
+            <a href="#" class="icon-link icon-link-hover text-decoration-none text-dark">
+                <img src="icons/whatsapp.svg" alt="Icone whatsapp" class="bi">WhatsApp
+            </a>
+        </div>
+        <hr class="border border-3 border-dark my-5">
+
+        <p class="mt-5 position-relative top-50 text-dark text-center">&copy 2025 Nexora. Tous droits réservés.</p>
     </footer>
 </body>
 </html>
