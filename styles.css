@@ -50,6 +50,11 @@
     margin: auto;
 }
 
+.butt-filtre {
+    left: 78vw !important;
+    top: -5vh !important;
+}
+
 @media screen and (max-width: 1023px) {
     .logo-principale {
         width: 45vw !important;
@@ -57,5 +62,13 @@
 
     .formulaire {
         width: 100vw !important;
+    }
+
+    #filtre {
+        position: absolute !important;
+        z-index: 2 !important; 
+        width: 85vw !important;
+        height: 60vh !important;
+        background: linear-gradient(transparent, rgb(170, 182, 236)) !important;
     }
 }
